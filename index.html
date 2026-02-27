@@ -166,7 +166,8 @@
             // ==========================================
             // API Key strictly hidden in closure. (Note: Exposed to network tab natively in frontend architectures)
             const API_KEY = "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";
-            const API_URL = "https://openrouter.ai/api/v1/chat/completions";
+            const API_URL = "/api/chat"; // Since it's on the same domain, a relative path works!
+
 
             let state = {
                 chats: [], // { id, title, messages: [] }
